@@ -31,6 +31,16 @@
       font-size: 28px;
       font-weight: bold;
     }
+    #watermark {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1); /* halka fade */
+  transform: rotate(-20deg); /* thoda tilt */
+}
   </style>
 </head>
 
@@ -53,7 +63,7 @@
 <!-- ROLL NO -->
 <div id="t_roll" class="text" style="top:666px; left:210px;"></div>
 </div>
-
+<div id="watermark">TIME PASS</div>
 <script>
 function generatePDF() {
   document.getElementById("t_name").innerText =
@@ -70,6 +80,5 @@ function generatePDF() {
   );
 }
 </script>
-<h1> Time pass </h1>
 </body>
 </html>
